@@ -1,0 +1,22 @@
+@media only screen and (max-width: 768px) {
+    /* CSS-regler her */
+}
+
+body {
+    /* Baggrundsbilledets indstillinger */
+    background-image: url('Billedemappe/Baggrund.png'); /* Erstat 'Billedemappe/Baggrund.png' med stien til din egen PNG-fil */
+    background-size: cover; /* Justerer størrelsen på baggrundsbilledet */
+    background-repeat: no-repeat; /* Forhindrer gentagelse af baggrundsbilledet */
+    background-attachment: fixed; /* Holder baggrundsbilledet fast på skærmen, mens du scroller */
+}
+
+.boks1 {
+    background-color: #DAE4EB; /* Baggrundsfarve */
+    position: fixed; /* Fast positionering, så boksen ligger over indholdet */
+    top: 130px; /* Afstand fra toppen af browservinduet */
+    left: 0; /* Afstand fra venstre side af browservinduet */
+    width: 100%; /* Bredde, der strækker sig fra side til side */
+    height: 500px; /* Juster højden efter behov */
+    z-index: 999; /* Sørg for, at boksen ligger over andre elementer */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+}
