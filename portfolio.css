@@ -13,10 +13,30 @@ body {
 .boks1 {
     background-color: #DAE4EB; /* Baggrundsfarve */
     position: fixed; /* Fast positionering, så boksen ligger over indholdet */
-    top: 130px; /* Afstand fra toppen af browservinduet */
+    top: 100px; /* Afstand fra toppen af browservinduet */
     left: 0; /* Afstand fra venstre side af browservinduet */
     width: 100%; /* Bredde, der strækker sig fra side til side */
-    height: 500px; /* Juster højden efter behov */
+    height: 240px; /* Juster højden efter behov */
     z-index: 999; /* Sørg for, at boksen ligger over andre elementer */
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.3);
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.boksovenpå {
+    background-color: #5C86A2; /* Baggrundsfarve */
+    position: fixed; /* Fast positionering, så boksen ligger over indholdet */
+    top: 75px; /* Afstand fra toppen af browservinduet */
+    left: 10px; /* Afstand fra venstre side af browservinduet */
+    width: 55%; /* Bredde, der strækker sig fra side til side */
+    height: 290px; /* Juster højden efter behov */
+    z-index: 999; /* Sørg for, at boksen ligger over andre elementer */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
+}
+.boksovenpå2 {
+    background-color: #FFFFFF; /* Baggrundsfarve */
+    position: fixed; /* Fast positionering, så boksen ligger over indholdet */
+    top: 120px; /* Afstand fra toppen af browservinduet */
+    left: 85px; /* Afstand fra venstre side af browservinduet */
+    width: 45%; /* Bredde, der strækker sig fra side til side */
+    height: 200px; /* Juster højden efter behov */
+    z-index: 999; /* Sørg for, at boksen ligger over andre elementer */
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.5);
 }
