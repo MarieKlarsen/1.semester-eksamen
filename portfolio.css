@@ -1,8 +1,12 @@
+
+
 *{
     margin:0;
     padding:0;
     font-family: ambroise-std, serif;
 }
+
+/* baggrund*/
 
 #banner{
     background: url(billedemappe/Baggrund.png);
@@ -11,78 +15,13 @@
     height: 100vh;
 }
 
+/* logoet*/
+
 .logo{
     width: 140px;
     position: absolute;
     top: 4%;
     left: 10%;
-}
-
-/* Forside boks */
-.baggrundsboks-tekst {
-    text-align: center;
-    color: black;
-    padding-top: 130px;
-}
-
-.baggrundsboks-tekst h1 {
-    font-size: 35px;
-    font-weight: bold;
-}
-
-.baggrundsboks-tekst p {
-    font-size: 20px;
-    font-style: italic;
-}
-
-.container {
-    display: flex; 
-    justify-content: space-between; 
-}
-
-#baggrundsboks {
-    width: 100%; 
-    height: 200px; 
-    position: relative;
-    background-color: #DAE4EB; 
-    border-radius: 5px;
-    padding: 20px; 
-    text-align: center; 
-    color: #000; 
-    z-index: 0;
-}
-
-#baggrundsboks-content {
-    width:250px;
-    margin-right:0;
-    margin-left:auto;
-    text-align: left;
-}
-
-/* Pynteboks forside */
-#pynteboks1 {
-    width: 30%; 
-    height: 270px; 
-    background-color: #5C86A2; 
-    border-radius: 5px;
-    padding: 20px; 
-    position: relative;
-    z-index: 1; 
-    margin-top: -270px; 
-    margin-left: 20px; 
-}
-
-/* Billedeboks forside */
-#billedeboks1 {
-    width: 27%; 
-    height: 140px; 
-    background-color: #ffffff; 
-    border-radius: 5px;
-    padding: 20px; 
-    position: relative;
-    z-index: 2; 
-    margin-top: -250px; 
-    margin-left: 80px;
 }
 
 /* navigations menu*/
@@ -161,5 +100,123 @@ nav ul li a{
 
 }
 
+/* Forside boks */
+.boks-placering{
+    text-align: center;
+    color: black;
+    padding-top: 130px;
+}
 
+.baggrundsboks-tekst h1 {
+    font-size: 35px;
+    font-weight: bold;
+}
 
+.baggrundsboks-tekst p {
+    font-size: 20px;
+    font-style: italic;
+}
+
+.container {
+    display: flex; 
+    justify-content: space-between; 
+}
+
+#forsideboks1 {
+    width: 100%; 
+    height: 200px; 
+    position: relative;
+    background-color: #DAE4EB; 
+    padding: 20px; 
+    text-align: center; 
+    color: #000; 
+    z-index: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+}
+
+#forsideboks-content {
+    width:250px;
+    margin-right:0;
+    margin-left:auto;
+    text-align: right;
+}
+
+/* Pynteboks forside */
+#pynteboks1 {
+    width: 30%; 
+    height: 270px; 
+    background-color: #5C86A2; 
+    padding: 20px; 
+    position: relative;
+    z-index: 1; 
+    margin-top: -270px; 
+    margin-left: 20px; 
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
+}
+
+/* Billedeboks forside */
+#billedeboks1 {
+    width: 27%; 
+    height: 140px; 
+    background-color: #ffffff; 
+    padding: 20px; 
+    position: relative;
+    z-index: 2; 
+    margin-top: -250px; 
+    margin-left: 80px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
+}
+
+/* Om mig boks */
+.boks-placering{
+    text-align: center;
+    color: black;
+    padding-top: 130px;
+}
+
+#OmMig-boks2 {
+    width: 100%; 
+    height: 200px; 
+    position: relative;
+    background-color: #DAE4EB; 
+    padding: 20px; 
+    text-align: center; 
+    color: #000; 
+    z-index: 0;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
+}
+
+/* tekst om mig */
+#omMig-content{
+    width:550px;
+    margin-right:0;
+    margin-left:auto;
+    text-align: left;
+}
+
+/*pynteboks - om mig*/
+#pynteboks2 {
+    width: 70%; 
+    height: 140px; 
+    background-color: #5C86A2; 
+    padding: 20px; 
+    position: relative;
+    z-index: 1; 
+    margin-left: 20px;
+    margin-right: 50px;
+    margin-top: -195px; 
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
+}
+
+/* Billede - Om Mig */
+#billedeboks2 {
+    width: 15%; 
+    height: 100px; 
+    background-color: #ffffff; 
+    padding: 20px; 
+    position: relative;
+    z-index: 2; 
+    margin-top: -210px; 
+    margin-left: 400px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.7);
+}
