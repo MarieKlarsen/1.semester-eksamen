@@ -67,14 +67,22 @@
     border-radius: 5px;
     padding: 20px; 
     position: relative;
-    z-index: 0;
-    margin-top: -280px; 
+    z-index: 1; 
+    margin-top: -270px; 
+    margin-left: 20px; 
 }
 
-#pynteboks1 {
-    width: 210px;
-    margin-left:20px;
-
+/* Billedeboks forside */
+#billedeboks1 {
+    width: 27%; 
+    height: 140px; 
+    background-color: #ffffff; 
+    border-radius: 5px;
+    padding: 20px; 
+    position: relative;
+    z-index: 2; 
+    margin-top: -250px; 
+    margin-left: 80px;
 }
 
 /* navigations menu*/
