@@ -38,13 +38,15 @@
 
 }
 
-/* navigations menu*/
+
+
+/* navigations bruger menu*/
 #menu{
     width: 150px;
     position: absolute;
     right: 0;
     top: 0;
-    background: #5c86a29d;
+    background-color: #5c86a29d;
     z-index: 2;
     margin-top:65px;
 }
@@ -101,6 +103,26 @@ nav ul li a{
     z-index: 3;
     cursor: pointer;
     position: absolute;
+}
+
+@media only screen and (min-width: 768px) {
+    #menu {
+      top:0;
+      right:unset;
+      left:0;
+      width:100%;
+      margin-top:0;
+    }
+
+    #menu ul {
+        display: flex;
+        flex-direction: row;
+    }
+    
+
+    #menubtn {
+        display: none;
+    }
 }
 
 
