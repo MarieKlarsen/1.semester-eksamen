@@ -22,6 +22,7 @@
     text-align: center;
     color: black;
     padding-top: 180px;
+    margin-left: 30%;
     width:50px;
     transform: translateX(20%);
 }
@@ -38,24 +39,30 @@
 
 }
 
-
-
-/* navigations bruger menu*/
+/* navigations menu*/
 #menu{
-    width: 150px;
+    width: 90%;
+    padding-left:5%;
+    padding-right:5%;
     position: absolute;
-    right: 0;
+   left: 0;
     top: 0;
     background-color: #5c86a29d;
     z-index: 2;
-    margin-top:65px;
+    margin-top:0px;
+}
+
+#menu ul {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
 
 nav ul li{
     list-style: none;
     margin-top:25px;
     margin-bottom:35px;
-    margin-left:25px;
+    margin-left:40px;
     text-decoration: none;
     transition: text-decoration 0.3s ease;
 }
@@ -91,38 +98,21 @@ nav ul li a{
     color: #000;
 }
 
-#menubtn {
-    width:80px;
-    height:80px;
-    margin-top:-25px;
-    background: none;
-    text-align: center;
-    right: -1px;
-    top: 20px;
-    border-radius: 3px;
-    z-index: 3;
-    cursor: pointer;
-    position: absolute;
-}
 
 @media only screen and (min-width: 768px) {
     #menu {
       top:0;
       right:unset;
       left:0;
-      width:100%;
       margin-top:0;
-    }
-
-    #menu ul {
-        display: flex;
-        flex-direction: row;
     }
     
 
-    #menubtn {
-        display: none;
+    #menu ul {
+        margin-left:10%;
     }
+
+
 }
 
 
