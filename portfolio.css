@@ -220,31 +220,14 @@ nav ul li a{
 
 /* Projekter slide*/
 
-#projekterBagerstH {
-    width: 30%; 
-    height: 260px; 
-    position: relative;
-    background-color: #DAE4EB; 
-    padding: 30px; 
-    text-align: justify;
-    color: #000; 
-    z-index: 0;
-    margin-left: 340px;
-    margin-top: 60px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
-}
-#projekterBagerstV {
-    width: 30%; 
-    height: 260px; 
-    position: relative;
-    background-color: #DAE4EB; 
-    padding: 30px; 
-    color: #000; 
-    z-index: 0;
-    margin-left: 340px;
-    margin-top: -100px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.6);
-}
+
+
+
+
+
+
+
+
 /* kontakt mig information*/
 
 #Kontakt-boks3 {
