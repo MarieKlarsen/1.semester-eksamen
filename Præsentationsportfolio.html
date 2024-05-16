@@ -66,118 +66,65 @@
             </div>
         </div>
 
-
-        <div class="container">
-            <input type="radio" name="slider" id="s1">
-            <input type="radio" name="slider" id="s2">
-            <input type="radio" name="slider" id="s3">
-            <input type="radio" name="slider" id="s4">
-            <input type="radio" name="slider" id="s5">
-
-            <div class="clards">
-
-                <label for="s1" id="slide1">
-                    <div class="card">
-                        <div class="image">
-                            <img src="Billedemappe/animation projekt.png" alt="animation projekt">
-                            <div class="dots">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                    </div>
-
-                    <div class="infos">
-                        <span class="name">animation projekt</span>
-                        <span class="lorem">blabla</span>
-                    </div>
-                </label>
-                <label for="s2" id="slide2">
-                        <div class="card">
-                            <div class="image">
-                                <img src="Billedemappe/moving art projekt.png" alt="moving art">
-                                <div class="dots">
-                                <div></div>
-                                <div></div>
-                                <div></div>
-                            </div>
-                        </div>
-    
-                        <div class="infos">
-                            <span class="name">moving art</span>
-                            <span class="lorem">blabla</span>
-                        </div>
-                </label>
-                
-                <label for="s3" id="slide3">
-                            <div class="card">
-                                <div class="image">
-                                    <img src="Billedemappe/pawfact match.png" alt="pawfect match">
-                                    <div class="dots">
-                                    <div></div>
-                                    <div></div>
-                                    <div></div>
-                                </div>
-                            </div>
-        
-                            <div class="infos">
-                                <span class="name">pawfect match</span>
-                                <span class="lorem">blabla</span>
-                            </div>
-                </label>
-                 
-                <label for="s4" id="slide4">
-                                <div class="card">
-                                    <div class="image">
-                                        <img src="Billedemappe/pentool portrait projekt.png" alt="pentool portrait">
-                                        <div class="dots">
-                                        <div></div>
-                                        <div></div>
-                                        <div></div>
-                                    </div>
-                                </div>
-            
-                                <div class="infos">
-                                    <span class="name">pentool portrait</span>
-                                    <span class="lorem">blabla</span>
-                                </div>
-                </label>
-                
-                <label for="s5" id="slide5">
-                                    <div class="card">
-                                        <div class="image">
-                                            <img src="Billedemappe/redigering projekt.png" alt="redigering">
-                                            <div class="dots">
-                                            <div></div>
-                                            <div></div>
-                                            <div></div>
-                                        </div>
-                                    </div>
-                
-                                    <div class="infos">
-                                        <span class="name">redigering</span>
-                                        <span class="lorem">blabla</span>
-                                    </div>
-                </label>
-            
-                <label for="s6" id="slide6">
-                                        <div class="card">
-                                            <div class="image">
-                                                <img src="Billedemappe/" alt="snart">
-                                                <div class="dots">
-                                                <div></div>
-                                                <div></div>
-                                                <div></div>
-                                            </div>
-                                        </div>
-                    
-                                        <div class="infos">
-                                            <span class="name">snart</span>
-                                            <span class="lorem">blabla</span>
-                                        </div>
-                </label>
+        <div id="projects">
+            <div class="inactive-project-left project" data-index="1" onclick="showProject(this)">
+                <img class="project-image" src="Billedemappe/moving art projekt.png"></img>
+                <div class="project-text">
+                    <span class="project-text-title Cormorant Garamond">Moving art</span>
+                    <span class="project-text-text lora">Jeg har lavet en hundeapp, yay, min hund er så glad for den!
+                        :D</span>
+                </div>
             </div>
-   
+    
+            <div class="left-project project" data-index="2" onclick="showProject(this)">
+                <img class="project-image" src="Billedemappe/pentool portrait projekt.png"></img>
+                <div class="project-text">
+                    <span class="project-text-title Cormorant Garamond">Pentool portrait</span>
+                    <span class="project-text-text lora">Jeg har lavet en hundeapp, yay, min hund er så glad for den!
+                        :D</span>
+                </div>
+            </div>
+    
+            <img class="left-arrow" src="Billedemappe/venstre-pil.png" onclick="projectMove('left')"></img>
+    
+            <div class="active-project project" data-index="3" onclick="showProject(this)">
+                <img class="project-image" src="Billedemappe/redigering projekt.png"></img>
+                <div class="project-text">
+                    <span class="project-text-title Cormorant Garamond">Redigering</span>
+                    <span class="project-text-text lora">Jeg har lavet en hundeapp, yay, min hund er så glad for den!
+                        :D</span>
+                </div>
+            </div>
+    
+            <img class="right-arrow" src="Billedemappe/højre-pil.png" onclick="projectMove('right')"></img>
+    
+            <div class="right-project project" data-index="4" onclick="showProject(this)">
+                <img class="project-image" src="Billedemappe/pawfact match.png"></img>
+                <div class="project-text">
+                    <span class="project-text-title Cormorant Garamond">Pawfect Match</span>
+                    <span class="project-text-text lora">Jeg har lavet en hundeapp, yay, min hund er så glad for den!
+                        :D</span>
+                </div>
+            </div>
+    
+            <div class="inactive-project-right project" data-index="5" onclick="showProject(this)">
+                <img class="project-image" src="Billedemappe/animation projekt.png"></img>
+                <div class="project-text">
+                    <span class="project-text-title Cormorant Garamond">Animation</span>
+                    <span class="project-text-text lora">Jeg har lavet en hundeapp, yay, min hund er så glad for den!
+                        :D</span>
+                </div>
+            </div>
+    
+            <div class="inactive-project-right project" data-index="6" onclick="showProject(this)">
+                <img class="project-image" src="assets/pawfact-match .png"></img>
+                <div class="project-text">
+                    <span class="project-text-title Cormorant Garamond"></span>
+                    <span class="project-text-text lora">Jeg har lavet en hundeapp, yay, min hund er så glad for den!
+                        :D</span>
+                </div>
+            </div>
+        </div>
 
     
 
@@ -201,4 +148,98 @@
                 <span class="Cormorant Garamond">60796044</span>
             </div>
         </div>
+
+<footer>
+    <div class="footer-content Cormorant Garamond">
+        <h3>Find mig her</h3>
+        <p>@marieknudsenlarsen</p>
+        <p class="lora"> 
+        </p>
+    </div>
+    <div class="back-to-top">
+        <a href="#top">Tilbage til top</a>
+    </div>
+</footer>
+
 </body>
+
+<script type="text/javascript">
+    function projectMove(direction) {
+        let inactive_project_1 = document.querySelector('.inactive-project-left[data-index="1"]');
+        let left_project = document.querySelector(".left-project");
+        let active_project = document.querySelector(".active-project");
+        let right_project = document.querySelector(".right-project");
+        let inactive_project_5 = document.querySelector('.inactive-project-right[data-index="5"]');
+        let inactive_project_6 = document.querySelector('.inactive-project-right[data-index="6"]');
+
+        removeProject(active_project);
+        if (direction == "right") {
+            inactive_project_5.dataset.index = "4";
+            inactive_project_5.classList.add("right-project");
+            inactive_project_5.classList.remove("inactive-project-right");
+
+            inactive_project_6.dataset.index = "5";
+
+            right_project.classList.add("active-project");
+            right_project.classList.remove("right-project");
+            right_project.dataset.index = "3";
+
+            active_project.classList.add("left-project");
+            active_project.classList.remove("active-project");
+            active_project.dataset.index = "2";
+
+
+            left_project.classList.remove("left-project");
+            left_project.classList.add("inactive-project-left");
+            left_project.dataset.index = "1";
+
+            inactive_project_1.dataset.index = "6";
+            inactive_project_1.classList.remove("inactive-project-left");
+            inactive_project_1.classList.add("inactive-project-right");
+
+        } else if (direction == "left") {
+            inactive_project_1.classList.remove("inactive-project-left");
+            inactive_project_1.classList.add("left-project");
+            inactive_project_1.dataset.index = "2";
+
+            left_project.classList.remove("left-project");
+            left_project.classList.add("active-project");
+            left_project.dataset.index = "3"
+
+
+            right_project.classList.add("inactive-project-right");
+            right_project.classList.remove("right-project");
+            right_project.dataset.index = "5";
+
+            active_project.classList.remove("active-project");
+            active_project.classList.add("right-project");
+            active_project.dataset.index = "4";
+
+            inactive_project_5.dataset.index = "6";
+
+            inactive_project_6.classList.remove("inactive-project-right");
+            inactive_project_6.classList.add("inactive-project-left");
+            inactive_project_6.dataset.index = "1";
+        }
+    }
+
+    function showProject(element) {
+        let project_text = element.getElementsByClassName("project-text")[0];
+        if (project_text.classList.contains("show_project")) {
+            project_text.classList.remove("show_project");
+            return
+        }
+
+        if (element.classList.contains("active-project")) {
+            project_text.classList.add("show_project");
+        }
+    }
+
+    function removeProject(element) {
+        let project_text = element.getElementsByClassName("project-text")[0];
+        if (project_text.classList.contains("show_project")) {
+            project_text.classList.remove("show_project");
+        }
+    }
+</script>
+</html>

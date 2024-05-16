@@ -200,108 +200,141 @@ justify-content: flex-end;
 }
 
 /* Projekter slide*/
-main#carousel {
-    grid-row: 2 / 3;
-    grid-column: 1 / 8;
+#projects {
+    position: relative;
+    height: 40%;
     width: 100%;
-    height: auto;
+    margin-top: 10%;
+    overflow: hidden;
+}
+
+.project {
+    position: absolute;
+    overflow: hidden;
+}
+
+/*aktive projekter*/
+.active-project {
+    z-index: 2;
+    height: 90%;
+    width: 55%;
+    top: 0%;
+    right: 0%;
+    left: 0%;
+    background-color: #DAE4EB;
+    transition: all 1s, z-index 0.5s;
+}
+
+.left-project,
+.right-project {
+    z-index: 1;
+    height: 80%;
+    width: 55%;
+    top: 4.8%;
+    background-color: #ADC6D5;
+    box-shadow: 0px 5px 10px 10px #00000040;
+    transition: all 1s, z-index 0.25s;
+}
+
+.left-project {
+    left: 2.5%;
+    transition: all 1s;
+}
+
+.active-project {
+    left: 20%;
+    right: 20%;
+    box-shadow: 0px 4px 10px 10px #00000040;
+}
+
+.right-project {
+    right: 2.5%;
+    transition: all 1s;
+}
+
+/*pilene*/
+.left-arrow,
+.right-arrow {
+    z-index: 3;
+    position: absolute;
+    width: 5%;
+    top: 35.3%;
+}
+
+.left-arrow {
+    left: 2.5%;
+}
+
+.right-arrow {
+    right: 2.5%;
+}
+
+/*inaktive projekter*/
+.inactive-project-left {
+    left: -50%;
+}
+
+.inactive-project-right {
+    left: 100%;
+}
+
+.inactive-project-left,
+.inactive-project-right {
+    top: 4.8%;
+    height: 75%;
+    width: 46.2%;
+    z-index: 0;
+    opacity: 0;
+    transition: all 0.5s, z-index 0.25s, opacity 1s;
+}
+
+.left-project,
+.right-project,
+.active-project {
     display: flex;
     justify-content: center;
+    align-items: center;
     overflow: hidden;
-    position: relative;
-    margin-top: 30px;
 }
 
-div.item {
-    text-align: center;
-    padding: 20px;
-    border: 3px solid black;
-    border-radius: 20px;
-    background-color: #fff;
-    position: relative;
-    width: 300px;
-    height: auto;
-    background-color: white;
-    transition: all 0.25s linear;
-    margin: 0 10px;
+.project-image {
+    height: 90%;
 }
 
-.item img {
-    width: 200px;
-    height: 200px;
-    border-radius: 50%;
-    margin-top: 15px;
+.show_project {
+    top: 50% !important;
+    transition: all 1s;
 }
 
-.name {
-    margin-bottom: 2px;
-    color: #8c52ff;
-    font-size: 18px;
+
+/*aktive projekter*/
+.project-text {
+    position: absolute;
+    width: 100%;
+    height: 50%;
+    background-color:#5c86a281;
+    bottom: 0;
+    color: black;
+    display: flex;
+    flex-direction: column;
+    top: 100%;
+    transition: top 1s;
 }
 
-.occupation {
-    font-style: italic;
-    margin-top: 2px;
-    font-size: 14px;
+.project-text-title{ 
+    margin-left: 4.5%;
+    margin-top: 5%;
+    font-size: 20px;
+    font-weight: 700;
 }
 
-.testimonial {
-    font-size: 12px;
+.project-text-text {
+    margin-left: 4.5%;
+    margin-top: 3%;
+    font-size: 15px;
+    line-height: 2.500vh;
 }
 
-input[type="radio"] {
-    display: none;
-}
-
-input[type="radio"]:checked ~ main#carousel {
-    animation: slide 1s forwards;
-}
-
-@keyframes slide {
-    0% {
-        transform: translateX(0%);
-    }
-    20% {
-        transform: translateX(-100%);
-    }
-    40% {
-        transform: translateX(-200%);
-    }
-    60% {
-        transform: translateX(-300%);
-    }
-    80% {
-        transform: translateX(-400%);
-    }
-    100% {
-        transform: translateX(-500%);
-    }
-}
-
-input:nth-of-type(1) {
-    grid-column: 2 / 3;
-    grid-row: 2 / 3;
-}
-
-input:nth-of-type(2) {
-    grid-column: 3 / 4;
-    grid-row: 2 / 3;
-}
-
-input:nth-of-type(3) {
-    grid-column: 4 / 5;
-    grid-row: 2 / 3;
-}
-
-input:nth-of-type(4) {
-    grid-column: 5 / 6;
-    grid-row: 2 / 3;
-}
-
-input:nth-of-type(5) {
-    grid-column: 6 / 7;
-    grid-row: 2 / 3;
-}
 
 /* kontakt mig */
 #kontakt {
@@ -403,4 +436,42 @@ input:nth-of-type(5) {
 #kontakt_formular input::placeholder {
     color: #767676;
     font-family: 'lora';
+}
+
+
+/*footer*/
+footer {
+    background-color: #5c86a24d;
+    color: #000000;
+    padding: 10px;
+}
+
+.footer-content {
+    max-width: 95%;
+    margin: 0 auto;
+    flex-direction: row;
+}
+
+.footer-content h3 {
+    margin-bottom: 10px;
+}
+
+#top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #333; /* Baggrundsfarve */
+    color: #fff; /* Tekstfarve */
+    padding: 10px 20px; /* Polstring */
+    border-radius: 5px; /* Afrundede kanter */
+    display: none; /* Start med at skjule det, indtil det er nødvendigt */
+    transition: opacity 0.3s; /* Glat overgang når det vises */
+}
+
+#top:hover {
+    background-color: #555; /* Baggrundsfarve ved hover */
+}
+
+#top.show {
+    display: block; /* Vis det, når det er nødvendigt */
 }
