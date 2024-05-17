@@ -457,6 +457,8 @@ width: 40px;
 
 /* computer 16 tommer version */
 @media only screen and (min-width: 801px) {
+  
+  /*nav menuen*/
     #header_menu {
 height: 10%;
 width: 10%;
@@ -475,6 +477,7 @@ width: 10%;
         font-weight: bold;
     }
 
+    /*forside*/
     #forsideboks1 {
         z-index: 0;
         width: 100%;
@@ -514,6 +517,8 @@ width: 10%;
         top: 40%;
         left: 20%;
     }
+
+    /*om mig*/ 
 
     #ommig_boks1 {
         margin-left: 2.5%;
@@ -557,6 +562,8 @@ width: 10%;
         box-shadow: 0px 4px 4px 0px #00000040;
     }
 
+
+    /*Projekt*/
     #projects {
         height: 90%;
         margin-top: 10;
@@ -651,6 +658,8 @@ width: 10%;
         overflow: hidden;
     }
 
+
+    /*Kontakt*/
     #kontakt {
         height: 80%;
         margin-top: 5%;
@@ -708,24 +717,7 @@ width: 10%;
         box-shadow: 0px 2px 5px 2px #00000040;
     }
 
-    .footer{
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-        background-color: #5c86a276;
-        width: 100%;
-        height: 100%;
-    }
-    
-    .some-ikon{
-    position: absolute;
-    left: 5%;
-    transform: translate(0, -20%);
-    display: flex;
-    flex-direction: row;
-    align-items: flex-end;
-    }
-    
+/*Footer*/    
     .some-ikon img{
     width: 40px;
     margin-bottom: 5;
