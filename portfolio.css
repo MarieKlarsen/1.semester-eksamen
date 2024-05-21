@@ -12,7 +12,6 @@ body {
     font-family: 'Cormorant Garamond', serif;
 }
 
-
 /* logoet*/
 
 .logo{
@@ -435,8 +434,8 @@ justify-content: flex-end;
 
 .some-ikon{
 position: absolute;
-bottom: 1;
 left: 5%;
+font-size: 12px;
 transform: translate(0, -20%);
 display: flex;
 flex-direction: row;
@@ -444,15 +443,16 @@ align-items: flex-end;
 }
 
 .some-ikon img{
-width: 40px;
+width: 30px;
 }
 
 .rettigheder p{
-    font-size: 12px;
+    font-size: 10px;
     right: 0;
     width: 100%;
-    padding-left: 40%;
+    padding-left: 60%;
 }
+
 
 
 /* computer 16 tommer version */
@@ -545,7 +545,7 @@ width: 10%;
     
     #ommig_tekst {
         font-weight: 500;
-        font-size: 25px;
+        font-size: 30px;
         line-height: 5.000vh;
         margin-left: 3%;
         text-wrap: wrap;
@@ -566,7 +566,6 @@ width: 10%;
     /*Projekt*/
     #projects {
         height: 90%;
-        margin-top: 10;
         width: 100%;
     }
 
@@ -720,8 +719,10 @@ width: 10%;
 /*Footer*/    
     .some-ikon img{
     width: 40px;
-    margin-bottom: 5;
+    margin-bottom: 0;
+    margin-top: 10px;
     }
+
     
     .rettigheder p{
         font-size: 12px;
@@ -729,5 +730,6 @@ width: 10%;
         width: 100%;
         padding-left: 200%;
     }
+
     
 }

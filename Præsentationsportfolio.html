@@ -8,14 +8,13 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Lora:ital,wght@0,400..700;1,400..700&display=swap" rel="stylesheet">
-    <title>Marie-Præsentationsportfolio</title>
 </head>
 
 <body>
 
     <header class="Cormorant Garamond">
         <div class="header_container">
-            <img src="Billedemappe/logo.png" class="logo">
+            <img src="Billedemappe/logo.png" alt=logo class="logo">
             <nav class="menu">
                 <ul>
                     <li><a href="#home">Forside</a></li>
@@ -68,7 +67,7 @@
 
         <div id="projects">
             <div class="inactive-project-left project" data-index="1" onclick="showProject(this)">
-                <img class="project-image" src="Billedemappe/moving art projekt.png"></img>
+                <img src="Billedemappe/moving_art.png" alt="projekt-billede" class="project-image">
                 <div class="project-text">
                     <span class="project-text-title Cormorant Garamond">Moving art</span>
                     <span class="project-text-text lora">Jeg har lavet en hundeapp, yay, min hund er så glad for den!
@@ -77,7 +76,7 @@
             </div>
     
             <div class="left-project project" data-index="2" onclick="showProject(this)">
-                <img class="project-image" src="Billedemappe/pentool portrait projekt.png"></img>
+                <img src="Billedemappe/pentool_portrait.png" alt="projekt-billede" class="project-image">
                 <div class="project-text">
                     <span class="project-text-title Cormorant Garamond">Pentool portrait</span>
                     <span class="project-text-text lora">Jeg har lavet en hundeapp, yay, min hund er så glad for den!
@@ -85,10 +84,10 @@
                 </div>
             </div>
     
-            <img class="left-arrow" src="Billedemappe/venstre-pil.png" onclick="projectMove('left')"></img>
+            <img src="Billedemappe/venstre-pil.png" alt="venstre-pil" class="left-arrow" onclick="projectMove('left')">
     
             <div class="active-project project" data-index="3" onclick="showProject(this)">
-                <img class="project-image" src="Billedemappe/redigering projekt.png"></img>
+                <img src="Billedemappe/redigering.png" alt="projekt-billede" class="project-image">
                 <div class="project-text">
                     <span class="project-text-title Cormorant Garamond">Redigering</span>
                     <span class="project-text-text lora">Jeg har lavet en hundeapp, yay, min hund er så glad for den!
@@ -96,10 +95,10 @@
                 </div>
             </div>
     
-            <img class="right-arrow" src="Billedemappe/højre-pil.png" onclick="projectMove('right')"></img>
+            <img class="right-arrow" alt="højre-pil" src="Billedemappe/højre-pil.png" onclick="projectMove('right')">
     
             <div class="right-project project" data-index="4" onclick="showProject(this)">
-                <img class="project-image" src="Billedemappe/pawfact match.png"></img>
+                <img src="Billedemappe/pawfact_match.png" alt="projekt-billede" class="project-image">
                 <div class="project-text">
                     <span class="project-text-title Cormorant Garamond">Pawfect Match</span>
                     <span class="project-text-text lora">Jeg har lavet en hundeapp, yay, min hund er så glad for den!
@@ -108,7 +107,7 @@
             </div>
     
             <div class="inactive-project-right project" data-index="5" onclick="showProject(this)">
-                <img class="project-image" src="Billedemappe/animation projekt.png"></img>
+                <img src="Billedemappe/animation.png" alt="projekt-billede" class="project-image">
                 <div class="project-text">
                     <span class="project-text-title Cormorant Garamond">Animation</span>
                     <span class="project-text-text lora">Jeg har lavet en hundeapp, yay, min hund er så glad for den!
@@ -117,7 +116,7 @@
             </div>
     
             <div class="inactive-project-right project" data-index="6" onclick="showProject(this)">
-                <img class="project-image" src="assets/pawfact-match .png"></img>
+                <img src="assets/pawfact_match.png" alt="projekt-billede" class="project-image">
                 <div class="project-text">
                     <span class="project-text-title Cormorant Garamond"></span>
                     <span class="project-text-text lora">Jeg har lavet en hundeapp, yay, min hund er så glad for den!
@@ -161,9 +160,7 @@
             </div>
         </footer>
 
-</body>
-
-<script type="text/javascript">
+<script>
     function projectMove(direction) {
         let inactive_project_1 = document.querySelector('.inactive-project-left[data-index="1"]');
         let left_project = document.querySelector(".left-project");
@@ -242,4 +239,6 @@
         }
     }
 </script>
+</body>
+
 </html>
