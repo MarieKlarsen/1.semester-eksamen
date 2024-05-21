@@ -12,6 +12,10 @@ body {
     font-family: 'Cormorant Garamond', serif;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 /* logoet*/
 
 .logo{
@@ -519,7 +523,6 @@ width: 10%;
     }
 
     /*om mig*/ 
-
     #ommig_boks1 {
         margin-left: 2.5%;
         margin-right: 2.5%;
