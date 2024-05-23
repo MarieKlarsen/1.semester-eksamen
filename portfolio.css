@@ -247,7 +247,7 @@ justify-content: flex-end;
 .right-arrow {
     z-index: 3;
     position: absolute;
-    width: 5%;
+    width: 15%;
     top: 35.3%;
 }
 
@@ -448,8 +448,8 @@ justify-content: flex-end;
 
 .some-ikon{
 position: absolute;
-left: 5%;
-font-size: 12px;
+left: 3%;
+font-size: 14px;
 transform: translate(0, -20%);
 display: flex;
 flex-direction: row;
@@ -457,7 +457,7 @@ align-items: flex-end;
 }
 
 .some-ikon img{
-width: 30px;
+width: 40px;
 }
 
 .rettigheder p{
@@ -618,7 +618,7 @@ width: 10%;
     }
 
     .right-project {
-        left: 60%;
+        left: 59%;
         transition: all 1s;
     }
 
@@ -626,16 +626,16 @@ width: 10%;
     .right-arrow {
         z-index: 3;
         position: absolute;
-        width: 2.8%;
+        width: 10%;
         top: 35.7%;
     }
 
     .left-arrow {
-        left: 16%;
+        left: 13%;
     }
 
     .right-arrow {
-        right: 16%;
+        right: 13%;
     }
 
     .inactive-project-left {
