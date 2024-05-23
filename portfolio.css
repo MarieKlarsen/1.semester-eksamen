@@ -2,12 +2,13 @@
 
 /* baggrund*/
 body {
-    background: url("Billedemappe/Baggrund.png");
+    background: url("Billedemappe/baggrund.jpg");
     background-size: cover;
     margin: 0;
     padding: 0;
     width: 100vw;
     height: 100vh;
+    color: white;
     font-family: 'lora', sans-serif;
     font-family: 'Cormorant Garamond', serif;
 }
@@ -30,7 +31,7 @@ margin-left: 1%;
 
 .menu a {
     text-decoration: none;
-    color: black;
+    color: white;
     font-size: 15px;
     position: relative;
     font-weight: bold;
@@ -41,7 +42,7 @@ margin-left: 1%;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    background-color: #5c86a24d;
+    background-color: #9ebee06f;
     width: 100%;
 }
 
@@ -63,12 +64,12 @@ justify-content: flex-end;
     left:0;
     width: 0;
     height: 3px;
-    background-color: #000000;
+    background-color: #264666;
     transition: width 0.3s ease-in-out;
 }
 
 .menu a:hover {
-    color: #000000;
+    color: #264666;
 }
 
 .menu a:hover::after {
@@ -88,7 +89,7 @@ justify-content: flex-end;
     z-index: 0;
     width: 100%;
     height: 100%;
-    background-color: #DAE4EB;
+    background-color: #6D8EB1;
     top: 20%;
     box-shadow: 0px 4px 15px 10px #00000040;
 }
@@ -115,7 +116,7 @@ justify-content: flex-end;
     z-index: 1;
     width: 40%;
     height: 117%;
-    background-color: #5C86A2;
+    background-color: #87A9CC;
     top: 8.9%;
     left: 6%;
     box-shadow: 0px 4px 10px 10px #00000040;
@@ -141,7 +142,7 @@ justify-content: flex-end;
     margin-right: 2.5%;
     height: 30%;
     margin-top: 20%;
-    background-color: #DAE4EB;
+    background-color: #6D8EB1;
     box-shadow: 0px 4px 15px 10px #00000040;
     display: flex; /* Tilføj flexbox til at justere indhold */
     justify-content: center; /* Centrer indhold vandret */
@@ -154,7 +155,7 @@ justify-content: flex-end;
     flex-direction: column;
     height: 60%;
     width: 80%;
-    background-color: #ADC6D5;
+    background-color: #87A9CC;
     box-shadow: 0px 4px 4px 0px #00000040;
     margin-left: -12%; /* Juster margenen til venstre efter behov */
 }
@@ -177,19 +178,21 @@ justify-content: flex-end;
 }
 
 #ommig_billede {
-    background-color: white;
-    width: 19%;
-    height: 47%;
+    background-image: url('Billedemappe/miig.jpg');
+    background-size: cover;
+    background-position: center;
+    width: 80px;
+    height: 100px;
     position: absolute;
     right: 3%;
-    top: 5.7%;
+    top: 6%;
     box-shadow: 0px 4px 4px 0px #00000040;
 }
 
 /* Projekter slide*/
 #projects {
     position: relative;
-    height: 40%;
+    height: 60%;
     width: 100%;
     margin-top: 10%;
     overflow: hidden;
@@ -208,7 +211,7 @@ justify-content: flex-end;
     top: 0%;
     right: 0%;
     left: 0%;
-    background-color: #DAE4EB;
+    background-color: #9EBEE0;
     transition: all 1s, z-index 0.5s;
 }
 
@@ -218,7 +221,7 @@ justify-content: flex-end;
     height: 80%;
     width: 55%;
     top: 4.8%;
-    background-color: #ADC6D5;
+    background-color: #87A9CC;
     box-shadow: 0px 5px 10px 10px #00000040;
     transition: all 1s, z-index 0.25s;
 }
@@ -299,9 +302,9 @@ justify-content: flex-end;
     position: absolute;
     width: 100%;
     height: 50%;
-    background-color:#5c86a281;
+    background-color:#6D8EB1e4;
     bottom: 0;
-    color: black;
+    color: white;
     display: flex;
     flex-direction: column;
     top: 100%;
@@ -310,7 +313,7 @@ justify-content: flex-end;
 
 .project-text-title{ 
     margin-left: 4.5%;
-    margin-top: 5%;
+    margin-top: 10%;
     font-size: 20px;
     font-weight: 700;
 }
@@ -318,8 +321,8 @@ justify-content: flex-end;
 .project-text-text {
     margin-left: 4.5%;
     margin-top: 3%;
-    font-size: 15px;
-    line-height: 2.500vh;
+    font-size: 16px;
+    line-height: 4.500vh;
 }
 
 
@@ -332,7 +335,7 @@ justify-content: flex-end;
 
 #kontakt_boks1 {
     position: absolute;
-    background-color: #DAE4EB;
+    background-color: #6D8EB1;
     width: 95%;
     margin-left: 2.5%;
     margin-right: 2.5%;
@@ -346,7 +349,7 @@ justify-content: flex-end;
     height: 94%;
     right: 2.5%;
     bottom: 10%;
-    background-color: #AAC4D4;
+    background-color: #87A9CC;
     box-shadow: 0px 4px 15px 10px #00000040;
 }
 
@@ -358,7 +361,7 @@ justify-content: flex-end;
     position: absolute;
     width: 45.3%;
     height: 34.6%;
-    background-color: #5C86A2;
+    background-color: #9EBEE0;
     top: 25%;
     bottom: 25%;
     right: 4.5%;
@@ -400,16 +403,18 @@ justify-content: flex-end;
 #kontakt_formular input {
     background: none;
     border: none;
-    color: black;
+    color: white;
     font-size: 10px;
     line-height: 1.298vh;
-    border-bottom: 1px solid black;
+    border-bottom: 1px solid white;
     margin-bottom: 12.5%;
 }
 
+/*"Send besked" knap*/
+
 #kontakt_formular button {
-    background-color: #5C86A2;
-    color: black;
+    background-color: #9EBEE0;
+    color: white;
     border-radius: 5px;
     font-weight: bold;
     border: none;
@@ -418,20 +423,25 @@ justify-content: flex-end;
     font-size: 8px;
     font-weight: 600;
     box-shadow: 0px 2px 5px 2px #00000040;
+    transition: background-color 0.3s, color 0.3s; 
+}
+
+#kontakt_formular button:hover {
+    background-color: #6D8EB1; 
+    color: white; 
 }
 
 #kontakt_formular input::placeholder {
-    color: #767676;
+    color: #D2D2D2;
     font-family: 'lora';
 }
-
 
 /*footer*/
 .footer{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background-color: #5c86a276;
+    background-color: #9ebee06f;
     width: 100%;
     height: 100%;
 }
@@ -475,7 +485,6 @@ width: 10%;
 
     .menu a {
         text-decoration: none;
-        color: black;
         font-size: 25px;
         position: relative;
         font-weight: bold;
@@ -703,12 +712,10 @@ width: 10%;
     #kontakt_formular input {
         font-size: 20px;
         line-height: 1.200vh;
-        border-bottom: 1px solid black;
     }
     
     #kontakt_formular button {
         background-color: #5C86A2;
-        color: black;
         border-radius: 5px;
         font-weight: bold;
         border: none;
