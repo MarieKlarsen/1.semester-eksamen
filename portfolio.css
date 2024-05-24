@@ -167,14 +167,14 @@ justify-content: flex-end;
     font-size: 15px;
     font-weight: 600;
     margin-left: 3%;
-    margin-bottom: 1%;
+    margin-bottom: 2%;
 }
 
 #ommig_tekst {
     font-weight: 500;
     font-size: 11px;
     width: 90%;
-    line-height: 2.000vh;
+    line-height: 1.500vh;
     margin-left: 3%;
     text-wrap: wrap;
     padding-right: 35px;
@@ -184,11 +184,11 @@ justify-content: flex-end;
     background-image: url('Billedemappe/miig.jpg');
     background-size: cover;
     background-position: center;
-    width: 80px;
+    width: 60px;
     height: 100px;
     position: absolute;
     right: 3%;
-    top: 6%;
+    top: 23%;
     box-shadow: 0px 4px 4px 0px #00000040;
 }
 
@@ -482,8 +482,8 @@ margin-top: 6px;
   
   /*nav menuen*/
     #header_menu {
-height: 10%;
-width: 10%;
+height: 100%;
+width: 100%;
     }
 
     .logo{
@@ -495,7 +495,7 @@ width: 10%;
         display: flex;
         flex-direction: row;
         text-decoration: none;
-        font-size: 25px;
+        font-size: 30px;
         justify-content: space-between;
         position: relative;
         font-weight: bold;
@@ -506,40 +506,40 @@ width: 10%;
     #forsideboks1 {
         z-index: 0;
         width: 100%;
-        height: 230%;
-        top: 30%;
+        height: 260%;
+        top: 50%;
     }
 
     #forsideboks_tekst {
         display: flex;
         flex-direction: column;
         width: 30%;
-        margin-left: 60%;
+        margin-left: 50%;
         margin-right: 0px;
-        margin-top: 6%;
+        margin-top: 5%;
     }
     
     .tekst_h1 {
         font-weight: bold;
-        font-size: 70px;
+        font-size: 60px;
     }
     
     .tekst_h2 {
         font-weight: 600;
-        font-size: 40px;
+        font-size: 30px;
     }
     
     #boks1 {
         width: 30%;
-        height: 270%;
-        top: 9%;
+        height: 290%;
+        top: 35%;
         left: 6%;
     }
     
     #boks2 {
         width: 25%;
         height: 210%;
-        top: 40%;
+        top: 75%;
         left: 20%;
     }
 
@@ -548,18 +548,18 @@ width: 10%;
         margin-left: 2.5%;
         margin-right: 2.5%;
         height: 80%;
-        margin-top: 33%;
+        margin-top: 40%;
     }
     
     #ommig_boks2 {
         padding-top: 5px;
-        height: 70%;
-        width: 60%;
-        margin-left: -32%;
+        height: 85%;
+        width: 65%;
+        margin-left: -30%;
     }
     
     #ommig_titel {
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 600; /* tjek dette */
         line-height: 3.000vh;
         margin-bottom: 25px;
@@ -569,7 +569,8 @@ width: 10%;
     
     #ommig_tekst {
         font-weight: 500;
-        font-size: 30px;
+        font-size: 25px;
+        width: 85%;
         line-height: 5.000vh;
         margin-left: 3%;
         text-wrap: wrap;
@@ -588,8 +589,13 @@ width: 10%;
 
 
     /*Projekt*/
+
+    .project-image {
+        height: 70%;
+    }
+
     #projects {
-        height: 90%;
+        height: 80%;
         width: 100%;
     }
 
@@ -681,6 +687,20 @@ width: 10%;
         overflow: hidden;
     }
 
+    /*Projekt tekst*/
+    .project-text-title{ 
+        margin-left: 4.5%;
+        margin-top: 2%;
+        font-size: 30px;
+        font-weight: 700;
+    }
+    
+    .project-text-text {
+        margin-left: 4.5%;
+        margin-top: 1%;
+        font-size: 25px;
+        line-height: 5.000vh;
+    }
 
     /*Kontakt*/
     #kontakt {
@@ -689,7 +709,7 @@ width: 10%;
     }
     
     #kontaktinformation {
-        width: 25%;
+        width: 30%;
         top: 25%;
         right: 15%;
 
@@ -703,14 +723,14 @@ width: 10%;
     
     /*Kontakt send besked formular*/
     #kontakt_formular {
-        width: 30%;
+        width: 45%;
     }
     
     #kontakt_formular span {
         font-weight: 600;
-        font-size: 40px;
+        font-size: 30px;
         line-height: 1.2vh;
-        margin-left: -200px;
+        margin-left: -320px;
     }
     
     #kontakt_formular form {
@@ -722,7 +742,7 @@ width: 10%;
     }
     
     #kontakt_formular input {
-        font-size: 20px;
+        font-size: 25px;
         line-height: 1.200vh;
     }
     
@@ -733,25 +753,44 @@ width: 10%;
         border: none;
         line-height: 3.700vh;
         width: 40%;
-        font-size: 15px;
+        font-size: 20px;
         font-weight: 600;
         box-shadow: 0px 2px 5px 2px #00000040;
     }
 
-/*Footer*/    
-    .some-ikon img{
-    width: 40px;
-    margin-bottom: 0;
-    margin-top: 10px;
-    }
+/*footer*/
+.footer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    background-color: #9ebee06f;
+    width: 100%;
+    height: 100%;
+    margin-top: 5%;
+}
 
-    
-    .rettigheder p{
-        font-size: 12px;
-        right: 0;
-        width: 100%;
-        padding-left: 200%;
-    }
+.some-ikon{
+position: absolute;
+left: 1%;
+font-size: 25px;
+transform: translate(0, -20%);
+display: flex;
+flex-direction: row;
 
-    
+}
+
+.some-ikon img{
+width: 100px;
+margin-top: 30px;
+}
+
+.rettigheder p{
+    font-size: 25px;
+    right: 0;
+    width: 100%;
+    padding-left: 40%;
+    margin-top: 10%;
+}
+
+
 }
