@@ -169,7 +169,7 @@
         let inactive_project_6 = document.querySelector('.inactive-project-right[data-index="6"]');
 
         removeProject(active_project);
-        if (direction == "right") {
+        if (direction == "left") {
             inactive_project_5.dataset.index = "4";
             inactive_project_5.classList.add("right-project");
             inactive_project_5.classList.remove("inactive-project-right");
@@ -193,7 +193,7 @@
             inactive_project_1.classList.remove("inactive-project-left");
             inactive_project_1.classList.add("inactive-project-right");
 
-        } else if (direction == "left") {
+        } else if (direction == "right") {
             inactive_project_1.classList.remove("inactive-project-left");
             inactive_project_1.classList.add("left-project");
             inactive_project_1.dataset.index = "2";
