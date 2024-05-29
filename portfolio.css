@@ -2,7 +2,7 @@
 
 /* baggrund*/
 body {
-    background: url("Billedemappe/baggrund.jpg");
+    background: url("billedemappe/baggrund.jpg");
     background-size: cover;
     margin: 0;
     width: 100%;
@@ -135,7 +135,7 @@ justify-content: flex-end;
 }
 
 #boks2 {
-    background-image: url('Billedemappe/billede-forside.png');
+    background-image: url('billedemappe/billede-forside.png');
     background-size: cover;
     background-position: center;
     width: 30%;
@@ -189,14 +189,14 @@ justify-content: flex-end;
     font-weight: 500;
     font-size: 11px;
     width: 85%;
-    line-height: 2.000vh;
+    line-height: 2.500vh;
     margin-left: 3%;
     text-wrap: wrap;
     padding-right: 35px;
 }
 
 #ommig_billede {
-    background-image: url('Billedemappe/miig.jpg');
+    background-image: url('billedemappe/miig.jpg');
     background-size: cover;
     background-position: center;
     width: 60px;
@@ -492,15 +492,16 @@ align-items: self-end;
 
 .some-ikon img{
 width: 40px;
-margin-top: 6px;
+margin-top: 4px;
+padding-left: 3%;
 }
 
 .rettigheder p{
     font-size: 9px;
     right: 0;
     width: 100%;
-    padding-left: 35%;
-    margin-top: 5.5%;
+    padding-left: 45%;
+    margin-top: 8%;
 }
 
 
